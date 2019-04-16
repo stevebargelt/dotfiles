@@ -52,7 +52,7 @@ add_to_path_end "$GOPATH/bin"
 quiet_which rbenv && add_to_path_start "$(rbenv root)/shims"
 
 # Aliases
-alias keyme='/Volumes/fob/load.sh home 20'
+alias keyme='/Volumes/fob/load.sh 10'
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
