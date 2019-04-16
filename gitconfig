@@ -1,24 +1,35 @@
-[http]
-[core]
-	excludesfile = /Users/steve/.gitignore_global
-	editor = code --wait
-[diff]
-    tool = default-difftool
-[difftool "default-difftool"]
-    cmd = code --wait --diff $LOCAL $REMOTE
-[merge]
-  tool = meld
-[mergetool]
-  prompt = false
-[mergetool "meld"]
-  trustExitCode = true
-  cmd = open -W -a Meld --args --auto-merge \"$PWD/$LOCAL\" \"$PWD/$BASE\" \"$PWD/$REMOTE\" --output=\"$PWD/$MERGED\"
 [user]
 	name = Steve Bargelt
 	email = steve@bargelt.com
-	signingkey = F38F0BFE582426EA
+[github]
+	user = stevebargelt
+[core]
+	excludesfile = ~/.gitignore
+	editor = code --wait
+	# Don't prompt for commit messages for merge commits.		
+ 	mergeoptions = --no-edit		
+ 	commitGraph = true	
+[diff]
+    # Use the slower but better patience diff algorithm
+		algorithm = patience
+		# Use new diff algorithm to make e.g. function diffs look better.
+		compactionheuristic = true
+		tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+[mergetool]
+  prompt = false
+	keepBackup = false
+	keepTemporaries = false
 [push]
-	default = matching
+	# Push to the set upstream branch being tracked by default.		
+ 	default = simple
+[pull]
+	# Default to rebasing on pulls		
+ 	rebase = true 
+[help]		
+   # Autocorrect mistyped commands.		
+ 	autocorrect = 1
 [alias]
 	co = checkout
 	up = up = !git pull --rebase --prune $@ && git submodule update --init --recursive
@@ -33,4 +44,9 @@
 	mmaster = !git checkout master && git merge --no-ff $@ && git push origin master
 	bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs git branch -d; }; f"
 	bdone = "!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
-	
+[rebase]
+  autoStash = true
+  autoSquash = true
+[credential]		
+  # Use macOS Keychain to store HTTP passwords.		
+  helper = osxkeychain
