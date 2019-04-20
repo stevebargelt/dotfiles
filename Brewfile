@@ -10,6 +10,7 @@ tap "homebrew/test-bot"
 cask "java8"
 brew "antigen"
 brew "azure-cli"
+cask "balenaetcher"
 brew "docker", link: false
 brew "docker-machine", link: false
 brew "exa"
@@ -36,7 +37,6 @@ cask "appcleaner"
 cask "arduino"
 cask "docker"
 cask "drawio"
-cask "etcher"
 cask "fastlane"
 cask "firefox"
 cask "font-fira-code"
@@ -61,8 +61,6 @@ mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "OneDrive", id: 823766827
 mas "Pages", id: 409201541
-mas "Remote Desktop 8", id: 715768417
+mas "Microsoft Remote Desktop", id: 1295203466
 mas "Slack", id: 803453959
-mas "Tweetbot", id: 1384080005
 mas "Xcode", id: 497799835
-

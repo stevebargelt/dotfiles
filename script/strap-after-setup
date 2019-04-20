@@ -8,7 +8,11 @@ script/install-vscode-extensions
 
 if [ "$SHELL" != "/bin/zsh" ]
 then
-  chsh -s /bin/zsh mike
+  chsh -s /bin/zsh stevebargelt
 fi
 
+mkdir ~/code/go
+
 go get -u github.com/justjanne/powerline-go
+
+source dockAdd.sh

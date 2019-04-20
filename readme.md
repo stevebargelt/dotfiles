@@ -17,8 +17,9 @@ after checkout to symlink (or copy) everything in this directory to your home di
 
 ## To Do
 
-Get Hazel License from 1Password -> put into hazel
+In dock app config files, add ability to add spacer
 Setup GPG for git signing
+
 
 ## Maunal Installs
 
@@ -34,3 +35,16 @@ Enter TripMode License (it is in 1Password)
 
 R and RStudio
 Backblaze for personal computers `brew cask install backblaze`
+Hazel `brew cask install hezel` -> Hazel requires System permissions, holds up main install
+
+* Get Hazel License from 1Password -> put into hazel
+
+## Check
+
+Pages
+Remote Desktop 8 Failed
+Slack
+Tweetbot Failed
+
+
+

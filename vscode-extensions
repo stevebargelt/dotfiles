@@ -1,5 +1,4 @@
 ban.spellright
-bradygaster.azuretoolsforvscode
 DavidAnson.vscode-markdownlint
 eamodio.gitlens
 ecmel.vscode-html-css
@@ -13,6 +12,7 @@ ms-azuretools.vscode-azurefunctions
 ms-azuretools.vscode-azurestorage
 ms-mssql.mssql
 ms-python.python
+ms-vscode.vscode-node-azure-pack
 ms-vscode.azure-account
 ms-vscode.cpptools
 ms-vscode.csharp
