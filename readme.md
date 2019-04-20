@@ -2,6 +2,9 @@
 
 My dot files shared between machines. These will also be used during a [Strap](https://github.com/MikeMcQuaid/strap) install on a new machine.
 
+Great source of Mac Setup Scripts I found when researching:
+[https://github.com/tiiiecherle/osx_install_config](https://github.com/tiiiecherle/osx_install_config)
+
 Twitter: [@stevebargelt](http://twitter.com/stevebargelt)
 
 Email [Steve Bargelt](mailto:steve@bargelt.com)
