@@ -15,4 +15,4 @@ mkdir ~/code/go
 
 go get -u github.com/justjanne/powerline-go
 
-source dockFixup
+script/dockFixup

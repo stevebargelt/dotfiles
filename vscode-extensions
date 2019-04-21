@@ -3,7 +3,6 @@ DavidAnson.vscode-markdownlint
 eamodio.gitlens
 ecmel.vscode-html-css
 joshbax.mdhelper
-ksubedi.net-core-project-manager
 mauve.terraform
 mdickin.markdown-shortcuts
 miramac.vscode-exec-node
@@ -22,6 +21,5 @@ ms-vscode.Theme-MarkdownKit
 msazurermtools.azurerm-vscode-tools
 neilding.language-liquid
 PeterJausovec.vscode-docker
-ronaldloyko.coffeescript-snippets
 vsciot-vscode.vscode-arduino
 vsmobile.vscode-react-native
