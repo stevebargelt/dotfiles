@@ -23,18 +23,25 @@ function set_dock_apps () {
     $DEF_W $DOCK 'persistent-apps' -array ''
     $DEF_W $DOCK 'persistent-others' -array ''
  
+    SAVEIFS=$IFS
+    IFS=$(echo -en "\n\b")
     for APP in $(cat $(dirname $0)/../dock-apps-to-add)
       do
+        IFS=$SAVEIFS
+        echo $APP
         # dloc=$(defaults read com.apple.dock persistent-apps | grep file-label | awk '/'$APP'/  {printf NR}')
         # dloc=$[$dloc-1]
         # echo $dloc
         # sudo -u $USER /usr/libexec/PlistBuddy -c "Delete persistent-apps:$dloc" ~/Library/Preferences/com.apple.dock.plist
-        # Add an if to look for SPACER in file. Ignoring for now. 
-        #$DEF_W $DOCK 'persistent-apps' -array-add '{ tile-data = {}; tile-type = "spacer-tile"; }'
-        $DEF_W $DOCK 'persistent-apps' \
-        -array-add "$APP_HEAD/Applications/$APP/$APP_TAIL"
+        if [ "$APP" = "SPACER" ]; then
+          $DEF_W $DOCK 'persistent-apps' -array-add '{ tile-data = {}; tile-type = "spacer-tile"; }'
+        else
+          $DEF_W $DOCK 'persistent-apps' \
+          -array-add "$APP_HEAD/Applications/$APP/$APP_TAIL"
+        fi
 
     done
+    IFS=$SAVEIFS
   
   $OSA -e 'tell application "Dock" to quit'
 
