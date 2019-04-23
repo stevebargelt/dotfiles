@@ -45,7 +45,7 @@ add_to_path_start "/usr/local/bin"
 add_to_path_start "/usr/local/sbin"
 
 # Setup Go development
-export GOPATH="$HOME/code/go"
+export GOPATH="$HOME/go"
 add_to_path_end "$GOPATH/bin"
 
 # Run rbenv if it exists
