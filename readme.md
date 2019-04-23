@@ -20,34 +20,39 @@ after checkout to symlink (or copy) everything in this directory to your home di
 
 ## To Do
 
-In dock app config files, add ability to add spacer
 Setup GPG for git signing
-
+Auto-hide Dock
 
 ## Maunal Installs
 
-1. (Visual Studio Mac)[https://visualstudio.microsoft.com/vs/mac/]
-1. (Android Studio)[https://developer.android.com/studio]
-1. (Davinci Resolve)[https://www.blackmagicdesign.com/products/davinciresolve/]
+1. [Visual Studio Mac](https://visualstudio.microsoft.com/vs/mac/)
+1. [Android Studio](https://developer.android.com/studio)
+1. [Davinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/)
+1. [Cisco Jabber](https://uit.stanford.edu/service/jabber/mac/installation)
+
+Then `osascript -e 'tell application "Dock" to quit'` to get these manual install icos to show in dock correctly.
 
 ## Manual Steps
 
 Enter TripMode License (it is in 1Password)
+Install the 1Password extension in all browsers
+First start of Microsoft Office product will ask for login to get license
+Slack - add all orgs and such
+WebExTeams - add login
+Jabber - login
 
 ## Optional Installs
 
 R and RStudio
 Backblaze for personal computers `brew cask install backblaze`
-Hazel `brew cask install hezel` -> Hazel requires System permissions, holds up main install
+Hazel `brew cask install hazel` -> Hazel requires System permissions, holds up main install
 
 * Get Hazel License from 1Password -> put into hazel
 
-## Check
+## Other Notes
 
-Pages
-Remote Desktop 8 Failed
-Slack
-Tweetbot Failed
-
+> Note: Dockutil might be useful if it proves to difficult to manipulate the Dock purely with built-in commands.
+[https://github.com/kcrawford/dockutil](https://github.com/kcrawford/dockutil)
+`brew install dockutil`
 
 
