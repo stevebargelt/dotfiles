@@ -46,6 +46,7 @@ cask "hazel"
 cask "karabiner-elements"
 cask "keepingyouawake"
 cask "keycastr"
+cask "microsoft-office"
 cask "nvalt"
 cask "obs"
 cask "postman"
@@ -53,6 +54,7 @@ cask "sizeup"
 cask "tripmode"
 cask "visual-studio-code"
 cask "vmware-horizon-client"
+cask "webex-teams"
 mas "1Password 7", id: 1333542190
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
