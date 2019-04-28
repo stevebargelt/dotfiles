@@ -5,6 +5,9 @@ My dot files shared between machines. These will also be used during a [Strap](h
 Great source of Mac Setup Scripts I found when researching:
 [https://github.com/tiiiecherle/osx_install_config](https://github.com/tiiiecherle/osx_install_config)
 
+and another:
+[https://github.com/mathiasbynens/dotfiles/blob/master/.macos](https://github.com/mathiasbynens/dotfiles/blob/master/.macos)
+
 Twitter: [@stevebargelt](http://twitter.com/stevebargelt)
 
 Email [Steve Bargelt](mailto:steve@bargelt.com)

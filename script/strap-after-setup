@@ -16,3 +16,5 @@ mkdir ~/code/go
 go get -u github.com/justjanne/powerline-go
 
 script/dockFixup
+
+script/macOS

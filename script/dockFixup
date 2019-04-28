@@ -52,8 +52,13 @@ function set_dock_apps () {
 }
 
 
+# Set the icon size of Dock items to 36 pixels
+DEF_W $DOCK tilesize -int 36
+
+# Minimize windows into their application’s icon
+DEF_W $DOCK minimize-to-application -bool true
 
 #Move dock to left lege of screen
-defaults write com.apple.Dock orientation left
+DEF_W $DOCK orientation left
 
 set_dock_apps
