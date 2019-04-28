@@ -26,11 +26,11 @@ after checkout to symlink (or copy) everything in this directory to your home di
 Setup GPG for git signing
 Auto-hide Dock
 
-## Maunal Installs
+## Manual Installs
 
 1. [Visual Studio Mac](https://visualstudio.microsoft.com/vs/mac/)
 1. [Android Studio](https://developer.android.com/studio)
-1. [Davinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/)
+1. [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/)
 1. [Cisco Jabber](https://uit.stanford.edu/service/jabber/mac/installation)
 
 Then `osascript -e 'tell application "Dock" to quit'` to get these manual install icos to show in dock correctly.
@@ -43,6 +43,7 @@ First start of Microsoft Office product will ask for login to get license
 Slack - add all orgs and such
 WebExTeams - add login
 Jabber - login
+Change Terminal Font to Fira Code, Regular, 12
 
 ## Optional Installs
 
