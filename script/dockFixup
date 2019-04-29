@@ -58,7 +58,7 @@ DEF_W $DOCK tilesize -int 36
 # Minimize windows into their application’s icon
 DEF_W $DOCK minimize-to-application -bool true
 
-#Move dock to left lege of screen
-DEF_W $DOCK orientation left
+#Move dock to left edge of screen
+DEF_W $DOCK orientation -string left
 
 set_dock_apps

@@ -8,7 +8,7 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 #defaults write com.apple.finder AppleShowAllFiles -bool true
 
 # Finder: show all filename extensions
-defaults write NSGlobalDomain AppleShowAllExtensions -bool tru
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 # Keep folders on top when sorting by name
 defaults write com.apple.finder _FXSortFoldersFirst -bool true
