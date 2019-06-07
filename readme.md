@@ -25,6 +25,7 @@ after checkout to symlink (or copy) everything in this directory to your home di
 
 Setup GPG for git signing
 Auto-hide Dock
+Make default terminal size larger
 
 ## Manual Installs
 
