@@ -6,8 +6,8 @@
   "editor.fontFamily": "Fira Code",
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
-  "terminal.integrated.fontFamily": "Inconsolata for Powerline",
-  "terminal.integrated.fontSize": 18,    
+  "terminal.integrated.fontFamily": "Fira Mono for Powerline",
+  "terminal.integrated.fontSize": 18,
   "[makefile]": {
       "editor.tabSize": 4,
       "editor.insertSpaces": false
@@ -18,6 +18,10 @@
 "files.defaultLanguage": "markdown",
 "editor.largeFileOptimizations": false,
 "editor.detectIndentation": false,
+"peacock.affectActivityBar": true,
+"peacock.affectStatusBar": true,
+"peacock.affectTitleBar": true,
+"peacock.surpriseMeOnStartup": true,
 "spellright.groupDictionaries": false,
 "spellright.addToSystemDictionary": true,
 "search.runInExtensionHost": true,
@@ -32,3 +36,7 @@
     "stevebargelt"
 ]
 }
+
+
+
+
