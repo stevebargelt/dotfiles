@@ -61,3 +61,9 @@ Hazel `brew cask install hazel` -> Hazel requires System permissions, holds up m
 `brew install dockutil`
 
 
+## Check
+
+Pages
+Remote Desktop 8 Failed
+Slack
+Tweetbot Failed

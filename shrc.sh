@@ -56,25 +56,29 @@ alias keyme='/Volumes/fob/load.sh 10'
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
-alias ll='ls -la'                           # Preferred 'ls' implementation
-alias less='less -FSRXc'                    # Preferred 'less' implementation
-cd() { builtin cd "$@"; ll; }               # Always list directory contents upon 'cd'
-alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
-alias ..='cd ../'                           # Go back 1 directory level
-alias ...='cd ../../'                       # Go back 2 directory levels
-alias .3='cd ../../../'                     # Go back 3 directory levels
-alias .4='cd ../../../../'                  # Go back 4 directory levels
-alias .5='cd ../../../../../'               # Go back 5 directory levels
-alias .6='cd ../../../../../../'            # Go back 6 directory levels
-alias edit='code'                           # edit:         Opens any file in sublime editor
-alias f='open -a Finder ./'                 # f:            Opens current directory in MacOS Finder
-alias ~="cd ~"                              # ~:            Go Home
-alias c='clear'                             # c:            Clear terminal display
-alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable Paths
-alias show_options='shopt'                  # Show_options: display bash options settings
-mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:          Makes new Dir and jumps inside
-trash () { command mv "$@" ~/.Trash ; }     # trash:        Moves a file to the MacOS trash
-ql () { qlmanage -p "$*" >& /dev/null; }    # ql:           Opens any file in MacOS Quicklook Preview
+alias ll='ls -FGlAhp'                       # Preferred 'ls' implementation
+# alias less='less -FSRXc'                    # Preferred 'less' implementation
+# cd() { builtin cd "$@"; ll; }               # Always list directory contents upon 'cd'
+# alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
+# alias ..='cd ../'                           # Go back 1 directory level
+# alias ...='cd ../../'                       # Go back 2 directory levels
+# alias .3='cd ../../../'                     # Go back 3 directory levels
+# alias .4='cd ../../../../'                  # Go back 4 directory levels
+# alias .5='cd ../../../../../'               # Go back 5 directory levels
+# alias .6='cd ../../../../../../'            # Go back 6 directory levels
+# alias edit='code'                           # edit:         Opens any file in sublime editor
+# alias f='open -a Finder ./'                 # f:            Opens current directory in MacOS Finder
+# alias ~="cd ~"                              # ~:            Go Home
+# alias c='clear'                             # c:            Clear terminal display
+# alias which='type -all'                     # which:        Find executables
+# alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable Paths
+# alias show_options='shopt'                  # Show_options: display bash options settings
+# alias fix_stty='stty sane'                  # fix_stty:     Restore terminal settings when screwed up
+# alias cic='set completion-ignore-case On'   # cic:          Make tab-completion case-insensitive
+# mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:          Makes new Dir and jumps inside
+# trash () { command mv "$@" ~/.Trash ; }     # trash:        Moves a file to the MacOS trash
+# ql () { qlmanage -p "$*" >& /dev/null; }    # ql:           Opens any file in MacOS Quicklook Preview
+# alias DT='tee ~/Desktop/terminalOut.txt'    # DT:           Pipe content to file on MacOS Desktop
 
 # The rest are from http://natelandau.com/my-mac-osx-bash_profile/
 #   lr:  Full Recursive Directory Listing
@@ -90,6 +94,10 @@ alias finderHideHidden='defaults write com.apple.finder ShowAllFiles FALSE'
 alias cleanupLS="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 #    screensaverDesktop: Run a screensaver on the Desktop
 alias screensaverDesktop='/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine -background'
+
+# Add ZSH Specific Aliases
+alias zshconfig="code ~/.zshrc"
+alias ohmyszh="code ~/.oh-my-zsh"
 
 if [ "$MACOS" ]
 then
@@ -118,10 +126,10 @@ then
   add_to_path_end "/Applications/Xcode.app/Contents/Developer/usr/bin"
   add_to_path_end "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin"
 
-  alias ql="qlmanage -p 1>/dev/null"
-  alias locate="mdfind -name"
-  alias finder-hide="setfile -a V"
-  alias fork="fork_cli"
+  # alias ql="qlmanage -p 1>/dev/null"
+  # alias locate="mdfind -name"
+  # alias finder-hide="setfile -a V"
+  # alias fork="fork_cli"
 
   # Old default Curl is broken for Git on Leopard.
   [ "$OSTYPE" = "darwin9.0" ] && export GIT_SSL_NO_VERIFY=1
@@ -169,11 +177,11 @@ trash() {
   mv "$@" "$HOME/.Trash/"
 }
 
-# GitHub API shortcut
-github-api-curl() {
-  curl -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/$1"
-}
-alias github-api-curl="noglob github-api-curl"
+# # GitHub API shortcut
+# github-api-curl() {
+#   curl -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/$1"
+# }
+# alias github-api-curl="noglob github-api-curl"
 
 # Look in ./bin but do it last to avoid weird `which` results.
 force_add_to_path_start "bin"

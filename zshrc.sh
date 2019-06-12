@@ -4,6 +4,10 @@
 # run zprofile if this is not a login shell
 [ -n "$LOGIN_ZSH" ] && source ~/.zprofile
 
+# Path to your oh-my-zsh installation.
+export ZSH="/Users/stevebargelt/.oh-my-zsh"
+ZSH_THEME="spaceship"
+
 # History file
 export HISTFILE=~/.zsh_history
 
@@ -30,44 +34,48 @@ else
   export EDITOR='nano'
 fi
 
-# Add ZSH Specific Aliases
-alias zshconfig="code ~/.zshrc"
-
 # Load Antigen
-source /usr/local/share/antigen/antigen.zsh
+# source /usr/local/share/antigen/antigen.zsh
 
-# Load the oh-my-zsh's library.
-antigen use oh-my-zsh
+# # Load the oh-my-zsh's library.
+# antigen use oh-my-zsh
 
-antigen bundle aws
-antigen bundle git
-antigen bundle docker
-antigen bundle safe-paste
-antigen bundle golang
+# antigen bundle aws
+# antigen bundle git
+# antigen bundle docker
+# antigen bundle safe-paste
+# antigen bundle golang
 
-# Tell Antigen that you're done.
-antigen apply
+# # Tell Antigen that you're done.
+# antigen apply
 
-# Adding Powerline-Go (Shell Prompt in Go) 
-function powerline_precmd() {
-    PS1="$($GOPATH/bin/powerline-go -error $? -shell zsh)"
-}
+# # Adding Powerline-Go (Shell Prompt in Go) 
+# function powerline_precmd() {
+#     PS1="$($GOPATH/bin/powerline-go -error $? -shell zsh)"
+# }
 
-function install_powerline_precmd() {
-  for s in "${precmd_functions[@]}"; do
-    if [ "$s" = "powerline_precmd" ]; then
-      return
-    fi
-  done
-  precmd_functions+=(powerline_precmd)
-}
+# function install_powerline_precmd() {
+#   for s in "${precmd_functions[@]}"; do
+#     if [ "$s" = "powerline_precmd" ]; then
+#       return
+#     fi
+#   done
+#   precmd_functions+=(powerline_precmd)
+# }
 
-if [ "$TERM" != "linux" ]; then
-    install_powerline_precmd
-fi
+# if [ "$TERM" != "linux" ]; then
+#     install_powerline_precmd
+# fi
 
 # fix delete key on macOS
 [ -n "$MACOS" ] && bindkey '\e[3~' delete-char
 
+ENABLE_CORRECTION="true"
+COMPLETION_WAITING_DOTS="true"
+
 # load shared shell configuration
+source $ZSH/oh-my-zsh.sh
+
+plugins=(aws git docker golang)
+
 source ~/.shrc
