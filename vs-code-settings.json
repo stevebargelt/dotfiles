@@ -7,7 +7,7 @@
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
   "terminal.integrated.fontFamily": "Fira Mono for Powerline",
-  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.fontSize": 16,
   "[makefile]": {
       "editor.tabSize": 4,
       "editor.insertSpaces": false
