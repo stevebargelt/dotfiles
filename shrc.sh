@@ -53,10 +53,10 @@ quiet_which rbenv && add_to_path_start "$(rbenv root)/shims"
 
 # Aliases
 alias keyme='/Volumes/fob/load.sh 10'
-alias cp='cp -iv'                           # Preferred 'cp' implementation
-alias mv='mv -iv'                           # Preferred 'mv' implementation
-alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
-alias ll='ls -FGlAhp'                       # Preferred 'ls' implementation
+alias cp='cp -iv'                             # Preferred 'cp' implementation
+alias mv='mv -iv'                             # Preferred 'mv' implementation
+alias mkdir='mkdir -pv '                      # Preferred 'mkdir' implementation
+alias ll='ls -la'                             # Preferred 'ls' implementation
 # alias less='less -FSRXc'                    # Preferred 'less' implementation
 # cd() { builtin cd "$@"; ll; }               # Always list directory contents upon 'cd'
 # alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
