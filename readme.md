@@ -23,10 +23,12 @@ after checkout to symlink (or copy) everything in this directory to your home di
 
 ## To Do
 
-1. I have decided to move back to Oh My ZSH - how to automate that?
-1. Love the Spaceship theme... how to automate install/config?
-1. In dock app config files, add ability to add spacer
 1. Setup GPG for git signing
+1. In zshrc.sh username is hard-coded. Fix that?
+1. Automate any manual steps below?
+~~1. In dock app config files, add ability to add spacer~~
+~~1. I have decided to move back to Oh My ZSH - how to automate that?~~
+~~1. Love the Spaceship theme... how to automate install/config?~~
 ~~1. Add Peacock to VS Code extension~~
 ~~1. Add Peacock settings to VS Code settings~~
 
@@ -41,13 +43,22 @@ Then `osascript -e 'tell application "Dock" to quit'` to get these manual instal
 
 ## Manual Steps
 
-Enter TripMode License (it is in 1Password)
-Install the 1Password extension in all browsers
-First start of Microsoft Office product will ask for login to get license
-Slack - add all orgs and such
-WebExTeams - add login
-Jabber - login
-Change Terminal Font to Fira Mono for Powerline, Regular, 16
+1. Karabiner settings (especially if MS Natural Keyboard 4000)
+1. Run 1Password, setup, and sync passwords
+1. Run Docker application to setup (password in 1Password)
+1. Install the 1Password extension in all browsers
+1. First start of Microsoft Office product will ask for login to get license
+1. Start OneDrive & Log In
+1. If portable, enter TripMode License (it is in 1Password)
+1. Slack, login and add orgs
+1. Change Terminal Font to Fira Mono for Powerline, Regular, 14
+1. Open Alfred and configure, set CMD-SPACE hotkey (and remove from Spotlight)
+1. Open KeepingYouAwake and set to start a Login
+
+### For Work
+
+1. WebExTeams - add login
+1. Jabber - login
 
 ## Optional Installs
 
@@ -62,11 +73,3 @@ Hazel `brew cask install hazel` -> Hazel requires System permissions, holds up m
 > Note: Dockutil might be useful if it proves to difficult to manipulate the Dock purely with built-in commands.
 [https://github.com/kcrawford/dockutil](https://github.com/kcrawford/dockutil)
 `brew install dockutil`
-
-
-## Check
-
-Pages
-Remote Desktop 8 Failed
-Slack
-Tweetbot Failed
