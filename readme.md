@@ -59,6 +59,13 @@ Then `osascript -e 'tell application "Dock" to quit'` to get these manual instal
 
 1. WebExTeams - add login
 1. Jabber - login
+Enter TripMode License (it is in 1Password)
+Install the 1Password extension in all browsers
+First start of Microsoft Office product will ask for login to get license
+Slack - add all orgs and such
+WebExTeams - add login
+Jabber - login
+Change Terminal Font to Fira Mono for Poweline, Regular, 16
 
 ## Optional Installs
 
