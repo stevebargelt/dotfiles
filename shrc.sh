@@ -177,11 +177,6 @@ trash() {
   mv "$@" "$HOME/.Trash/"
 }
 
-# # GitHub API shortcut
-# github-api-curl() {
-#   curl -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/$1"
-# }
-# alias github-api-curl="noglob github-api-curl"
 
 # Look in ./bin but do it last to avoid weird `which` results.
 force_add_to_path_start "bin"

@@ -1,7 +1,9 @@
+echo "in shprofile"
+
 # Save more history
 export HISTSIZE="100000"
 export SAVEHIST="100000"
-
+ 
 # OS variables
 [ "$(uname -s)" = "Darwin" ] && export MACOS=1 && export UNIX=1
 [ "$(uname -s)" = "Linux" ] && export LINUX=1 && export UNIX=1

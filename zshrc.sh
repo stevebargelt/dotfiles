@@ -1,8 +1,9 @@
+echo " in zshrc"
 # check if this is a login shell
 [ "$0" = "-zsh" ] && export LOGIN_ZSH=1
 
 # run zprofile if this is not a login shell
-[ -n "$LOGIN_ZSH" ] && source ~/.zprofile
+# [ -n "$LOGIN_ZSH" ] && source ~/.zprofile
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/stevebargelt/.oh-my-zsh"

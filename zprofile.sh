@@ -1,3 +1,4 @@
+echo " in zprofile"
 # load shared shell configuration
 source ~/.shprofile
 
@@ -30,7 +31,7 @@ setopt no_case_glob
 # Expand parameters, commands and aritmatic in prompts
 setopt prompt_subst
 
-# git_branch() {
-#   GIT_BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null) || return
-#   [ -n "$GIT_BRANCH" ] && echo "($GIT_BRANCH) "
-# }
+git_branch() {
+  GIT_BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null) || return
+  [ -n "$GIT_BRANCH" ] && echo "($GIT_BRANCH) "
+}
