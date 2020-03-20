@@ -47,6 +47,7 @@ add_to_path_start "/usr/local/sbin"
 # Setup Go development
 export GOPATH="$HOME/go"
 add_to_path_end "$GOPATH/bin"
+export MYGOPATH="$GOPATH/src/github.com/stevebargelt"
 
 # Run rbenv if it exists
 quiet_which rbenv && add_to_path_start "$(rbenv root)/shims"
@@ -66,9 +67,9 @@ alias ll='ls -la'                             # Preferred 'ls' implementation
 # alias .4='cd ../../../../'                  # Go back 4 directory levels
 # alias .5='cd ../../../../../'               # Go back 5 directory levels
 # alias .6='cd ../../../../../../'            # Go back 6 directory levels
-# alias edit='code'                           # edit:         Opens any file in sublime editor
-# alias f='open -a Finder ./'                 # f:            Opens current directory in MacOS Finder
-# alias ~="cd ~"                              # ~:            Go Home
+alias edit='code'                           # edit:         Opens any file in sublime editor
+alias f='open -a Finder ./'                 # f:            Opens current directory in MacOS Finder
+alias ~= "cd ~"                              # ~:            Go Home
 # alias c='clear'                             # c:            Clear terminal display
 # alias which='type -all'                     # which:        Find executables
 # alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable Paths
@@ -85,7 +86,7 @@ alias ll='ls -la'                             # Preferred 'ls' implementation
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
 #   showa: to remind yourself of an alias (given some part of it)
 #   ------------------------------------------------------------
-    showa () { /usr/bin/grep --color=always -i -a1 $@ ~/Library/init/bash/aliases.bash | grep -v '^\s*$' | less -FSRXc ; }
+showa () { /usr/bin/grep --color=always -i -a1 $@ ~/Library/init/bash/aliases.bash | grep -v '^\s*$' | less -FSRXc ; }
 #   cleanupDS:  Recursively delete .DS_Store files
 alias cleanupDS="find . -type f -name '*.DS_Store' -ls -delete"
 alias finderShowHidden='defaults write com.apple.finder ShowAllFiles TRUE'
@@ -98,6 +99,20 @@ alias screensaverDesktop='/System/Library/Frameworks/ScreenSaver.framework/Resou
 # Add ZSH Specific Aliases
 alias zshconfig="code ~/.zshrc"
 alias ohmyszh="code ~/.oh-my-zsh"
+
+# Steve's helper scripts
+# Note Helpers
+source ~/code/scripts/new_note.sh
+
+# Blogging Helpers
+source ~/code/scripts/new_draft.sh
+source ~/code/scripts/note_to_draft.sh
+
+# Go Helpers
+source ~/code/scripts/newgo.sh
+
+# Project Helpers
+source ~/code/scripts/projects.sh
 
 if [ "$MACOS" ]
 then
