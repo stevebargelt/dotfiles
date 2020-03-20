@@ -31,6 +31,10 @@ sh script/fix_home_dotfiles.sh
 
 ```
 
+## Shell startup
+
+![Image of startup script flow](https://raw.githubusercontent.com/stevebargelt/dotfiles/master/assets/shell%20startup.png)
+
 ## To Do
 
 1. Setup GPG for git signing
