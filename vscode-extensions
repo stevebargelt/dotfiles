@@ -9,8 +9,6 @@ mauve.terraform
 mdickin.markdown-shortcuts
 miramac.vscode-exec-node
 ms-azuretools.vscode-azureappservice
-ms-azuretools.vscode-azurefunctions
-ms-azuretools.vscode-azurestorage
 ms-mssql.mssql
 ms-python.python
 ms-vscode.vscode-node-azure-pack
@@ -25,3 +23,4 @@ neilding.language-liquid
 PeterJausovec.vscode-docker
 vsciot-vscode.vscode-arduino
 vsmobile.vscode-react-native
+

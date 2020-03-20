@@ -1,6 +1,10 @@
 {
   "workbench.colorCustomizations": {
     "activityBar.background": "#02683a",
+<<<<<<< Updated upstream
+=======
+    "activityBar.activeBackground": "#02683a",
+>>>>>>> Stashed changes
     "activityBar.activeBorder": "#b763fc",
     "activityBar.foreground": "#e7e7e7",
     "activityBar.inactiveForeground": "#e7e7e799",

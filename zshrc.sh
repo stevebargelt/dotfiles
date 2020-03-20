@@ -34,39 +34,6 @@ else
   export EDITOR='nano'
 fi
 
-# Load Antigen
-# source /usr/local/share/antigen/antigen.zsh
-
-# # Load the oh-my-zsh's library.
-# antigen use oh-my-zsh
-
-# antigen bundle aws
-# antigen bundle git
-# antigen bundle docker
-# antigen bundle safe-paste
-# antigen bundle golang
-
-# # Tell Antigen that you're done.
-# antigen apply
-
-# # Adding Powerline-Go (Shell Prompt in Go) 
-# function powerline_precmd() {
-#     PS1="$($GOPATH/bin/powerline-go -error $? -shell zsh)"
-# }
-
-# function install_powerline_precmd() {
-#   for s in "${precmd_functions[@]}"; do
-#     if [ "$s" = "powerline_precmd" ]; then
-#       return
-#     fi
-#   done
-#   precmd_functions+=(powerline_precmd)
-# }
-
-# if [ "$TERM" != "linux" ]; then
-#     install_powerline_precmd
-# fi
-
 # fix delete key on macOS
 [ -n "$MACOS" ] && bindkey '\e[3~' delete-char
 
