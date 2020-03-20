@@ -1,4 +1,3 @@
-echo " in zprofile"
 # load shared shell configuration
 source ~/.shprofile
 

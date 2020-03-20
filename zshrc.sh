@@ -1,4 +1,3 @@
-echo " in zshrc"
 # check if this is a login shell
 [ "$0" = "-zsh" ] && export LOGIN_ZSH=1
 

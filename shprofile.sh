@@ -1,5 +1,3 @@
-echo "in shprofile"
-
 # Save more history
 export HISTSIZE="100000"
 export SAVEHIST="100000"

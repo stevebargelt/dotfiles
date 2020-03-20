@@ -21,16 +21,26 @@ after checkout to symlink (or copy) everything in this directory to your home di
 
 [![Build Status](https://travis-ci.org/stevebargelt/dotfiles.svg?branch=master)](https://travis-ci.org/stevebargelt/dotfiles)
 
+## Fix Broken Links
+
+In .dotfiles run
+
+```shell
+
+sh script/fix_home_dotfiles.sh
+
+```
+
 ## To Do
 
 1. Setup GPG for git signing
 1. In zshrc.sh username is hard-coded. Fix that?
 1. Automate any manual steps below?
-~~1. In dock app config files, add ability to add spacer~~
-~~1. I have decided to move back to Oh My ZSH - how to automate that?~~
-~~1. Love the Spaceship theme... how to automate install/config?~~
-~~1. Add Peacock to VS Code extension~~
-~~1. Add Peacock settings to VS Code settings~~
+   ~~1. In dock app config files, add ability to add spacer~~
+   ~~1. I have decided to move back to Oh My ZSH - how to automate that?~~
+   ~~1. Love the Spaceship theme... how to automate install/config?~~
+   ~~1. Add Peacock to VS Code extension~~
+   ~~1. Add Peacock settings to VS Code settings~~
 
 ## Manual Installs
 
@@ -60,17 +70,15 @@ Then `osascript -e 'tell application "Dock" to quit'` to get these manual instal
 1. WebExTeams - add login
 1. Jabber - login
 
-
 ## Optional Installs
 
 R and RStudio
 Backblaze for personal computers `brew cask install backblaze`
 Hazel `brew cask install hazel` -> Hazel requires System permissions, holds up main install
 
-* Get Hazel License from 1Password -> put into hazel
+- Get Hazel License from 1Password -> put into hazel
 
 ## Other Notes
 
 > Note: Dockutil might be useful if it proves to difficult to manipulate the Dock purely with built-in commands.
-[https://github.com/kcrawford/dockutil](https://github.com/kcrawford/dockutil)
-`brew install dockutil`
+> [https://github.com/kcrawford/dockutil](https://github.com/kcrawford/dockutil) > `brew install dockutil`
