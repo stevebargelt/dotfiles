@@ -38,11 +38,13 @@ quiet_which() {
 
 add_to_path_end "/sbin"
 add_to_path_end "$HOME/.gem/ruby/2.3.0/bin"
+
 add_to_path_end "$HOME/.rbenv/bin"
 add_to_path_end "$HOME/.cabal/bin"
 add_to_path_end "$HOME/.dotfiles/bin"
 add_to_path_start "/usr/local/bin"
 add_to_path_start "/usr/local/sbin"
+add_to_path_start "/usr/local/opt/ruby/bin"
 
 # Setup Go development
 export GOPATH="$HOME/go"
