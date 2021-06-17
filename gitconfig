@@ -50,3 +50,5 @@
 [credential]		
   # Use macOS Keychain to store HTTP passwords.		
   helper = osxkeychain
+[init]
+	defaultBranch = main

@@ -40,6 +40,8 @@ fi
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
+eval "$(rbenv init -)"
+
 # load shared shell configuration
 source $ZSH/oh-my-zsh.sh
 
