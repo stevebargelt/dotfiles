@@ -6,7 +6,7 @@
 for DOTFILE in *; do
   HOMEFILE="$HOME/.$DOTFILE"
   [ -d $DOTFILE ] && DOTFILE="$DOTFILE/"
-  DIRFILE="/Users/stevebargelt/.dotfiles/$DOTFILE"
+  DIRFILE="$HOME/.dotfiles/$DOTFILE"
 
   echo $DOTFILE | egrep -q '(^script/$|\.txt$|\.md$)' && continue
   echo $DOTFILE | grep -q 'vscode-settings' &&

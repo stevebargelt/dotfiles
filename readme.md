@@ -14,8 +14,74 @@ Email [Steve Bargelt](mailto:steve@bargelt.com)
 
 ## Install
 
-Run [`script/setup`](https://github.com/stevebargelt/dotfiles/blob/master/script/setup)
-after checkout to symlink (or copy) everything in this directory to your home directory.
+### Automated with Strap
+
+[Strap](https://github.com/MikeMcQuaid/strap)
+
+
+### Manual Setup
+
+This method omits many steps that Strap takes care of but can be used on a work computer (for instance). This is for *me* although it may work for you or give you a starting point. I'm on a Mac so take that into consideration. 
+
+First clone this repo first to your location of choice
+
+Symlink Brewfile to ~/.Brewfile for me this is something like:
+
+``` shell
+
+ln -sf ~/code/dotfiles/Brewfile ~/.Brewfile
+
+```
+
+Install everything in Brewfile:
+
+``` shell
+
+brew bundle --global
+
+```
+
+Install Oh My ZSH
+
+```shell
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# Install Spaceship Theme for ZSH
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+
+```
+
+Get [Go Powerline](https://github.com/justjanne/powerline-go) setup:
+
+```shell
+
+# clone
+git clone https://github.com/powerline/fonts.git --depth=1
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
+
+```
+
+Install Powerline Go
+
+>> TODO: this may work from the global Brewfile install, but I could not verify. Check next time we do a new install.
+
+```shell
+
+brew install powerline-go
+
+```
+
+#### Some Follow Up
+
+* In VS Code: CMD-Shift+P to run 'Shell Command: Install 'code' command in PATH'
+* I'd recommend installing VS Code extensions manually - too much changes between attempts to install them from a script.
+* Same with VS Code settings... too many changes to keep up to date unless I get disciplined about symlinking in the mean time... copy from your fave dev machine to this one
 
 ## Status
 
